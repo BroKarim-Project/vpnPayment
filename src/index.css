@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Radio Canada Big', sans-serif;
+}
+input[type='text']:focus ~ .input-text,
+input[type='text']:not(:placeholder-shown) ~ .input-text {
+  @apply text-blue-500 transform -translate-y-6 -translate-x-2 scale-75;
+}
+
+.gradient {
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 53%, hsla(231, 49%, 89%, 1) 82%, hsla(230, 82%, 85%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 53%, hsla(231, 49%, 89%, 1) 82%, hsla(230, 82%, 85%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 53%, hsla(231, 49%, 89%, 1) 82%, hsla(230, 82%, 85%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#D6DAF1", GradientType=1 );
+}
