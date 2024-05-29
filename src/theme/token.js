@@ -62,4 +62,7 @@ export const colors = {
   button: {
     100: '#f2f4f9',
   },
+  blue: {
+    100:  '#60a5fa',
+  }
 };
